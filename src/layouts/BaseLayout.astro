@@ -30,5 +30,19 @@
     <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-500">
       <p>&copy; 2026 My Personal Site. Built with Astro + Supabase.</p>
     </footer>
+
+    <!-- 滚动渐显：IntersectionObserver 驱动 -->
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
   </body>
 </html>
