@@ -21,10 +21,12 @@
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.2",
     "astro": "^7.0.0",
+    "daisyui": "^5.6.16",
     "mediabunny": "^1.50.7",
     "motion": "^12.42.2",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^6.1.200",
+    "preline": "^4.2.0",
     "tailwindcss": "^4.3.2",
     "vue": "^3.5.39"
   },
