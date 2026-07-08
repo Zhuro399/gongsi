@@ -1,0 +1,34 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <meta name="description" content="欢迎来到我的个人主页" />
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="fixed top-0 z-50 w-full border-b border-gray-800 bg-gray-950/80 backdrop-blur-md">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+        <a href="#" class="text-lg font-bold text-white">Home</a>
+        <div class="flex gap-8 text-sm text-gray-400">
+          <a href="#about" class="transition hover:text-white">关于</a>
+          <a href="#projects" class="transition hover:text-white">作品</a>
+          <a href="#contact" class="transition hover:text-white">联系</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-500">
+      <p>&copy; 2026 My Personal Site. Built with Astro + Supabase.</p>
+    </footer>
+  </body>
+</html>
